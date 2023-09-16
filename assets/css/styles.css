@@ -1,54 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@0,300;0,500;1,400;1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif; 
 }
 header{
     grid-area: header;
-    background-color:rgb(161, 161, 228) ;
-    color: white;
+    background-color:rgb(229, 235, 159) ;
+    color: black;
     text-align: center;
     padding: 10px;
 }
 
+p{
+    font-style: italic;
+    padding: 5px ;
+
+}
+
+
+main{
+    grid-area: main;
+}
+
+
 .aside-bar{
-    grid-area: aside-bar;
     background-color: rgb(225, 220, 220);
     min-height: 90vh;
     padding: 30px;
 }
 
+.aside-bar .items{
+    display:flex;
+
+}
  .aside-bar ul{
     list-style: none;
 }
 
- .grilla{
-    grid-area: grilla;
-
-}
 
 .grilla .card{
     text-align: center;
     padding: 20px;
-
-
 }
 
 .grilla .card img{
     width: 200px;
 }
 
-footer{
-    grid-area: footer;
-    text-align: center;
-    padding: 10px;
-}
-
 .grid-container{
     display: grid;
     grid-template-areas: 
     "header header"
-    "aside-bar grilla"
-    "footer footer";
+    "main main";
     gap: 10px;
 
+}
+.grid-container main{
+    display: grid;
+    grid-template-columns:auto 80% ;
+    gap: 10px;
+}
+.grid-container .grilla{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.grid-container button{
+    background-color:rgb(229, 235, 159)   ;
+    color: black;
+}
+footer{
+    text-align: center;
+    padding: 10px;
 }
