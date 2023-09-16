@@ -3,35 +3,52 @@
     padding: 0;
 }
 header{
+    grid-area: header;
     background-color:rgb(161, 161, 228) ;
     color: white;
     text-align: center;
     padding: 10px;
 }
-main{
-    display: flex;
-}
 
-main .aside-bar{
+.aside-bar{
+    grid-area: aside-bar;
     background-color: rgb(225, 220, 220);
-    width: 250px;
     min-height: 90vh;
     padding: 30px;
 }
 
-main .aside-bar ul{
+ .aside-bar ul{
     list-style: none;
 }
 
-main .grilla{
+ .grilla{
+    grid-area: grilla;
 
 }
 
-main .grilla .card img{
+.grilla .card{
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.grilla .card img{
     width: 200px;
 }
 
 footer{
+    grid-area: footer;
     text-align: center;
     padding: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside-bar grilla"
+    "footer footer";
+    gap: 10px;
+
 }
