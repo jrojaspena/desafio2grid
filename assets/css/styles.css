@@ -7,8 +7,30 @@ header{
     color: white;
     text-align: center;
     padding: 10px;
+}
+main{
+    display: flex;
+}
+
+main .aside-bar{
+    background-color: rgb(225, 220, 220);
+    width: 250px;
+    min-height: 90vh;
+    padding: 30px;
+}
+
+main .aside-bar ul{
+    list-style: none;
+}
+
+main .grilla{
 
 }
+
+main .grilla .card img{
+    width: 200px;
+}
+
 footer{
     text-align: center;
     padding: 10px;
